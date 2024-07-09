@@ -10,3 +10,4 @@ with tem_table as (
    union all 
    (  select * from  {{ ref('my_third_emp_model') }}) 
 )
+select * from tem_table
