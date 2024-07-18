@@ -4,4 +4,4 @@
     )
 }}
 
-select * from  DBT_NEW_MODEL.TEST.regions
+select * from  {{ source('Test_dbt', 'region') }}
